@@ -11,10 +11,10 @@ class HomeController extends Controller
 
         $all_dresses = Dress::all();
 
-        dd($all_dresses);
+        //dd($all_dresses);
 
         $data=[
-            //'dress'=>$all_dresses
+            'dresses'=>$all_dresses
         ];
 
         return view('home', $data);
